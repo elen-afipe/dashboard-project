@@ -10,20 +10,26 @@
 <div class="grid-container">
     <div class="header">
         <div class="header-row">
-            <div class="search">
-                <img class="search icon" src="./icons/search.svg">
-                <search></search>
-                <img class="notification icon" src="./icons/notification-on.svg">
-                <img class="profile-pic search" src="./images/user-profile.jpg" alt="">
-                <p class="user-name search">Name</p>
-            </div>
+                <div class="search-side">
+                    <img class="search icon" src="./icons/search.svg">
+                    <search>
+                        <form method="get" action="/search">
+                            <input type="search" name="seach-text" class="search-bar"/>
+                        </form>
+                    </search>
+                </div>
+                <div class="user-side">
+                    <img class="notification icon" src="./icons/notification-on.svg">
+                    <img class="profile-pic" src="./images/user-profile.jpg" alt="">
+                    <p class="user-name search">Name</p>
+                </div>
         </div>
         <div class="header-row">
-            <div class="user-info">
-                <img class="profile-pic" src="" alt="">
-                <div>
-                    <p class="greeting">Hi there,</p>
-                    <p class="user-name search">User</p>
+            <div class="user-greeting">
+                <img class="profile-pic greeting" src="./images/user-profile.jpg" alt="">
+                <div class="user-info">
+                        <p class="greeting">Hi there,</p>
+                        <p class="user-name search">Userest User (@username)</p>
                 </div>
             </div>
             <div class="buttons">
@@ -35,7 +41,7 @@
     </div>
     <div class="sidebar">
         <div class="logo-container"> 
-            <img class="logo" src="./icons/dashboard.svg">
+            <img class="logo icon" src="./icons/dashboard.svg">
             <div class="logo-text">Dashboard</div>
         </div>
         <div class="sidebar-links">
@@ -48,7 +54,7 @@
                 <div class="sidebar-text">Profile</div>
             </div>
             <div class="sidebar-row">
-                <img src="./icons/messages.svg.svg" alt="" class="sidebar-icon">
+                <img src="./icons/messages.svg" alt="" class="sidebar-icon">
                 <div class="sidebar-text">Messages</div>
             </div>
             <div class="sidebar-row">
@@ -80,56 +86,70 @@
         </div>
     </div>
     <div class="main-content">
-        <div class="cards">
-            <div class="section-header">Your articles</div>
-            <div class="card">
-                <h2 class="card-header">Arc's second album is found!</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio voluptas odio animi alias ratione laborum, ut laboriosam qui quod, nisi sequi sapiente iusto quisquam omnis eveniet neque ab necessitatibus?</p>
-                <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>
+        <div class="cards-container">
+            <h3 class="section-header">Your articles</h3>
+            <div class="cards">
+                <div class="card">
+                    <div>
+                        <h2 class="card-header">Arc's second album is found!</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio voluptas odio animi alias ratione laborum, ut laboriosam qui quod, nisi sequi sapiente iusto quisquam omnis eveniet neque ab necessitatibus?</p>
+                    </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h2 class="card-header">Ever heard of Amanaz?</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi deserunt quibusdam natus omnis, tempore temporibus porro dolor ullam, nesciunt consequatur! Alias rerum iste voluptates quisquam amet hic non totam.</p>
+                    </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                <div class="card">
+                    <div>
+                        <h2 class="card-header">No one beats this solo</h2>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloremque maxime aliquid inventore deserunt exercitationem corporis sunt quaerat libero minus eveniet vel modi repellat commodi magnam quae earum natus ut!</p>
+                    </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                <div class="card">
+                    <div>
+                        <h2 class="card-header">5 cool licks</h2>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis maxime quia enim sequi veniam optio necessitatibus amet, quos corporis exercitationem recusandae minima aut, totam hic dolore, expedita animi vel tenetur?</p>
+                    </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                <div class="card">
+                    <div>
+                        <h2 class="card-header">Just another header</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ea minus porro placeat possimus beatae, consectetur reiciendis aspernatur molestias, aperiam corrupti. Inventore consequatur tempora enim ipsam labore, vel accusamus quasi!</p>
+                    </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                <div class="card">
+                    <div>
+                        <h2 class="card-header">Music is dead (or is it)</h2>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic eum architecto recusandae, pariatur ad tenetur labore. In inventore excepturi repudiandae animi vel. Minima accusamus voluptates qui a, repudiandae unde assumenda.</p>
+                    </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
             </div>
-            <div class="card">
-                <h2 class="card-header">Ever heard of Amanaz?</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi deserunt quibusdam natus omnis, tempore temporibus porro dolor ullam, nesciunt consequatur! Alias rerum iste voluptates quisquam amet hic non totam.</p>
-                <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
-            <div class="card">
-                <h2 class="card-header">No one beats this solo</h2>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloremque maxime aliquid inventore deserunt exercitationem corporis sunt quaerat libero minus eveniet vel modi repellat commodi magnam quae earum natus ut!</p>
-                <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
-            <div class="card">
-                <h2 class="card-header">5 cool licks</h2>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis maxime quia enim sequi veniam optio necessitatibus amet, quos corporis exercitationem recusandae minima aut, totam hic dolore, expedita animi vel tenetur?</p>
-                <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
-            <div class="card">
-                <h2 class="card-header">Just another header</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ea minus porro placeat possimus beatae, consectetur reiciendis aspernatur molestias, aperiam corrupti. Inventore consequatur tempora enim ipsam labore, vel accusamus quasi!</p>
-                <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
-            <div class="card">
-                <h2 class="card-header">Music is dead (or is it)</h2>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic eum architecto recusandae, pariatur ad tenetur labore. In inventore excepturi repudiandae animi vel. Minima accusamus voluptates qui a, repudiandae unde assumenda.</p>
-                <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
         </div>
-    </div>
+  
 
     <div class="right-side">
         <div class="announcements-container">
-            <div class="section-header">Announcements</div>
+            <h3 class="section-header">Announcements</h3>
             <div class="announcements">
                 <div class="announcement">
                     <h3 class="announcement-header">Celebration</h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto autem reiciendis alias quos, ex rem voluptas. Modi, vel qui deleniti amet, iste nulla quisquam, libero animi ad ipsa repudiandae. Repellat.</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto autem reiciendis alias quos, ex rem voluptas. Repellat.</p>
                 </div>
                 <div class="announcement">
                     <h3 class="announcement-header">Gather your friends</h3>
-                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, soluta dolorum nihil rerum illo, reprehenderit commodi tempore similique sequi incidunt culpa minus! Adipisci quaerat vel iure quibusdam, maxime expedita?</p>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, soluta dolorum nihil rerum illo, reprehenderit commodi tempore similique sequi incidunt culpa minus!</p>
                 </div>
                 <div class="announcement">
                     <h3 class="announcement-header">Make a change!</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas velit dignissimos vitae perferendis magnam facere est fugiat laborum animi, quia beatae veniam fugit ipsa assumenda repellendus quasi dolores. Perferendis, repellat.</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas velit dignissimos vitae perferendis magnam facere est fugiat laborum animi, quia beatae veniam fugit ipsa assumenda.</p>
                 </div>
             </div>
         </div>
         <div class="trending-container">
-            <div class="section-header">Trending</div>
+            <h3 class="section-header">Trending</h3>
                 <div class="profiles">
                     <div class="profile">
                         <img src="./images/profile1.jpg" alt="" class="profile-pic">
@@ -161,6 +181,7 @@
                     </div>
                 </div>
         </div>
+    </div>
 </div>
 </div> 
 </body>
