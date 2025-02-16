@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer=""></script>
 </head>
 <body>
 <div class="grid-container">
@@ -19,9 +20,9 @@
                     </search>
                 </div>
                 <div class="user-side">
-                    <img class="notification icon" src="./icons/notification-on.svg">
+                    <img class="notification-icon" src="./icons/notification-on.svg" onclick="swapNotificationSVG(this)">
                     <img class="profile-pic" src="./images/user-profile.jpg" alt="">
-                    <p class="user-name search">Name</p>
+                    <p class="user-name search">User</p>
                 </div>
         </div>
         <div class="header-row">
@@ -94,38 +95,38 @@
                         <h2 class="card-header">Arc's second album is found!</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio voluptas odio animi alias ratione laborum, ut laboriosam qui quod, nisi sequi sapiente iusto quisquam omnis eveniet neque ab necessitatibus?</p>
                     </div>
-                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="star-icon" onclick="swapStarSVG(this)"><img src="./icons/eye-add.svg" alt="" class="eye-icon" onclick="swapEyeSVG(this)"><img src="./icons/repo.svg" alt="" class="card-icon"></div>
                 </div>
                 <div class="card">
                     <div>
                         <h2 class="card-header">Ever heard of Amanaz?</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi deserunt quibusdam natus omnis, tempore temporibus porro dolor ullam, nesciunt consequatur! Alias rerum iste voluptates quisquam amet hic non totam.</p>
                     </div>
-                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="star-icon" onclick="swapStarSVG(this)"><img src="./icons/eye-add.svg" alt="" class="eye-icon" onclick="swapEyeSVG(this)"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
                 <div class="card">
                     <div>
                         <h2 class="card-header">No one beats this solo</h2>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloremque maxime aliquid inventore deserunt exercitationem corporis sunt quaerat libero minus eveniet vel modi repellat commodi magnam quae earum natus ut!</p>
                     </div>
-                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="star-icon" onclick="swapStarSVG(this)"><img src="./icons/eye-add.svg" alt="" class="eye-icon" onclick="swapEyeSVG(this)"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
                 <div class="card">
                     <div>
                         <h2 class="card-header">5 cool licks</h2>
                         <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis maxime quia enim sequi veniam optio necessitatibus amet, quos corporis exercitationem recusandae minima aut, totam hic dolore, expedita animi vel tenetur?</p>
                     </div>
-                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="star-icon" onclick="swapStarSVG(this)"><img src="./icons/eye-add.svg" alt="" class="eye-icon" onclick="swapEyeSVG(this)"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
                 <div class="card">
                     <div>
                         <h2 class="card-header">Just another header</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ea minus porro placeat possimus beatae, consectetur reiciendis aspernatur molestias, aperiam corrupti. Inventore consequatur tempora enim ipsam labore, vel accusamus quasi!</p>
                     </div>
-                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="star-icon" onclick="swapStarSVG(this)"><img src="./icons/eye-add.svg" alt="" class="eye-icon" onclick="swapEyeSVG(this)"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
                 <div class="card">
                     <div>
                         <h2 class="card-header">Music is dead (or is it)</h2>
                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic eum architecto recusandae, pariatur ad tenetur labore. In inventore excepturi repudiandae animi vel. Minima accusamus voluptates qui a, repudiandae unde assumenda.</p>
                     </div>
-                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="card-icon"><img src="./icons/eye-add.svg" alt="" class="card-icon"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
+                    <div class="icons-row"><img src="./icons/star-add.svg" alt="" class="star-icon" onclick="swapStarSVG(this)"><img src="./icons/eye-add.svg" alt="" class="eye-icon" onclick="swapEyeSVG(this)"><img src="./icons/repo.svg" alt="" class="card-icon"></div>            </div>
             </div>
         </div>
   

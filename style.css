@@ -312,3 +312,6 @@ input[type="search"]:active{
 .header {
   box-shadow: var(--lower-shadow);
 }
+img[class*='icon']:hover{
+ cursor: pointer;
+}
