@@ -183,7 +183,7 @@ grid-column: 1/2;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
-min-height: calc(100% - 26px);
+min-height: calc(100% - 30px);
 } 
 
 .right-side{
